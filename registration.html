@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+<style>
+  body{
+    background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3798.jpg?w=900&t=st=1675630519~exp=1675631119~hmac=3d04e66086005755764199debc31a6daf070d150dab133989027d365963e290b')
+  }
+</style>
+<body>
+    <center>
+<div align="center">
+    <div><h1>Registration Page</h1></div>
+    <div>
+        <form action="{{url_for('registration')}}" method="POST" enctype="multipart/form-data">
+            <div>{{ message }}</div><br><br>
+            <label>First Name : </label><input id="firstname" name="firstname" type="text" placeholder="Enter First Name" autocomplete="off"/> <br><br>
+            <label>Last Name : </label><input id="lastname" name="lastname" type="text" placeholder="Enter Last Name" autocomplete="off"/> <br><br>
+            <label>User Name : </label><input id="username" name="username" type="text" placeholder="Enter User Name" autocomplete="off"/> <br><br>
+            <label>Password : </label><input id="password" name="password" type="password" placeholder="Enter Password" autocomplete="off"/> <br><br>
+            <label>Email : </label><input id="email" name="email" type="text" placeholder="Enter Email" autocomplete="off"/> <br><br>
+            <label>Upload File : </label><input type="file" id="textfile" name="textfile"><br><br>
+            <button id="submit" name="submit">Register</button>
+        </form>
+    </div>
+    <p>Already have an account? Please click <a href="{{url_for('login')}}">here to login</a></p>
+	<marquee scrollamount="15"> This is the Registration page</marquee>
+
+    </center>
+</div>
+</body>
+</html>
