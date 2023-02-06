@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+    </head>
+    <marquee scrollamount="15"> Greetings! This is Assignment 1 by Himakar Ananthasetty</marquee>
+
+    <style>
+        body{
+          background-image: url('https://img.freepik.com/free-photo/sky-background-sunrise_1398-2652.jpg?t=st=1675629598~exp=1675630198~hmac=820d08cec3674d4e217c30637853b479dd581f0f0fe5e9bfa1e9869661b205ce')
+        }
+
+      </style>
+    <body>
+        <center>
+        <div align="center">
+            <div><h1>Login Page</h1></div>
+        <div>
+            <form action="{{url_for('login')}}" method="POST">
+                <div>{{ message }}</div> 
+                <br><br>
+                <label>User Name : </label><input id="username" name="username" type="text" placeholder="Please enter User Name" autocomplete="off"/> 
+                <br><br>
+                <label>Password : </label>
+                <input id="password" name="password" type="password" placeholder="Please enter Password" autocomplete="off"/>
+                <br><br>
+                <button id="submit" name="submit">Sign in</button>
+            </form>
+        </div>
+        <p>If You Don't have an account? Please click on this link <a href="{{url_for('registration')}}">here</a></p>
+    </div>
+    <marquee scrollamount="15"> This is the Login/Index page</marquee>
+
+</center>
+</body>
+</html>
